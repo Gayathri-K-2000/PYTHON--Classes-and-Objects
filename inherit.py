@@ -9,6 +9,13 @@ class Parent:
 class Child(Parent):
   def __init__(self, name, age):
     Parent.__init__(self, name, age)
+    
+  def printdetail(self):
+  	print("CHILD'S NAME:  "+self.name+"\nCHILD'S AGE:  "+ self.age)
 
-x = Child("Mike", "44")
+  	
+
+x = Child("mike","34")
+y= Child("ken","13")
 x.printdet()
+y.printdetail()
